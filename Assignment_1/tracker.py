@@ -1,21 +1,13 @@
-# ============================================================
 # Project Title: Daily Calorie Tracker (CLI)
 # Author: Ujjawal Tiwari
 # Date: November 2025
 # Course: Programming for Problem Solving using Python
-# ============================================================
 
-import datetime  # for timestamp in bonus task
+import datetime  
 
-# -------------------------------
-# Task 1: Setup & Introduction
-# -------------------------------
 print("🍎 Welcome to the Daily Calorie Tracker!")
 print("This tool helps you record your daily meals and track your calorie intake.\n")
 
-# -------------------------------
-# Task 2: Input & Data Collection
-# -------------------------------
 meal_names = []
 calorie_values = []
 
@@ -30,25 +22,16 @@ for i in range(num_meals):
 
 print("\n✅ Meal data recorded successfully!")
 
-# -------------------------------
-# Task 3: Calorie Calculations
-# -------------------------------
 total_calories = sum(calorie_values)
 average_calories = total_calories / len(calorie_values)
 
 daily_limit = float(input("\nEnter your daily calorie limit: "))
 
-# -------------------------------
-# Task 4: Exceed Limit Warning System
-# -------------------------------
 if total_calories > daily_limit:
     status_message = "⚠️ You have exceeded your daily calorie limit! Try to eat lighter next time."
 else:
     status_message = "✅ Great job! You’re within your daily calorie limit."
 
-# -------------------------------
-# Task 5: Neatly Formatted Output
-# -------------------------------
 print("\n📋 Daily Calorie Summary")
 print("---------------------------------------------")
 print(f"{'Meal Name':<20}{'Calories':>10}")
@@ -91,3 +74,4 @@ else:
     print("\nSession not saved. Thank you for using the tracker!")
 
 print("\n👋 Goodbye! Stay healthy and mindful of your meals!")
+
