@@ -5,7 +5,7 @@
 
 import datetime  
 
-print("🍎 Welcome to the Daily Calorie Tracker!")
+print(" Welcome to the Daily Calorie Tracker!")
 print("This tool helps you record your daily meals and track your calorie intake.\n")
 
 meal_names = []
@@ -20,7 +20,7 @@ for i in range(num_meals):
     meal_names.append(meal)
     calorie_values.append(calories)
 
-print("\n✅ Meal data recorded successfully!")
+print("\n Meal data recorded successfully!")
 
 total_calories = sum(calorie_values)
 average_calories = total_calories / len(calorie_values)
@@ -28,11 +28,11 @@ average_calories = total_calories / len(calorie_values)
 daily_limit = float(input("\nEnter your daily calorie limit: "))
 
 if total_calories > daily_limit:
-    status_message = "⚠️ You have exceeded your daily calorie limit! Try to eat lighter next time."
+    status_message = " You have exceeded your daily calorie limit! Try to eat lighter next time."
 else:
-    status_message = "✅ Great job! You’re within your daily calorie limit."
+    status_message = " Great job! You’re within your daily calorie limit."
 
-print("\n📋 Daily Calorie Summary")
+print("\n Daily Calorie Summary")
 print("---------------------------------------------")
 print(f"{'Meal Name':<20}{'Calories':>10}")
 print("---------------------------------------------")
@@ -69,9 +69,10 @@ if save_option == "yes":
         file.write("---------------------------------------------\n")
         file.write(status_message + "\n")
 
-    print(f"\n💾 Session saved successfully as '{filename}'!")
+    print(f"\n Session saved successfully as '{filename}'!")
 else:
     print("\nSession not saved. Thank you for using the tracker!")
 
-print("\n👋 Goodbye! Stay healthy and mindful of your meals!")
+print("\n Goodbye! Stay healthy and mindful of your meals!")
+
 
