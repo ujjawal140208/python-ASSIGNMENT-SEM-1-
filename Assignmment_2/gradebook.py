@@ -122,10 +122,10 @@ def main():
             filename = input("Enter CSV filename (e.g. grades.csv): ").strip()
             marks = get_csv_input(filename)
         elif choice == '3':
-            print("👋 Exiting... Thank you for using GradeBook Analyzer!")
+            print(" Exiting... Thank you for using GradeBook Analyzer!")
             break
         else:
-            print("❌ Invalid choice. Try again.")
+            print(" Invalid choice. Try again.")
             continue
 
         if not marks:
@@ -142,8 +142,9 @@ def main():
         
         again = input("\nWould you like to analyze again? (y/n): ").strip().lower()
         if again != 'y':
-            print("👋 Goodbye! Have a great day.")
+            print(" Goodbye! Have a great day.")
             break
 
 if __name__ == "__main__":
     main()
+
